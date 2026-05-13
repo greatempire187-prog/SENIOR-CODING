@@ -1,0 +1,80 @@
+{
+  "abi": [
+    {
+      "inputs": [
+        {
+          "internalType": "address",
+          "name": "recipient",
+          "type": "address"
+        },
+        {
+          "internalType": "string",
+          "name": "metadataUri",
+          "type": "string"
+        }
+      ],
+      "name": "issueCertificate",
+      "outputs": [
+        {
+          "internalType": "bytes32",
+          "name": "",
+          "type": "bytes32"
+        }
+      ],
+      "stateMutability": "nonpayable",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "bytes32",
+          "name": "certificateId",
+          "type": "bytes32"
+        }
+      ],
+      "name": "revokeCertificate",
+      "outputs": [],
+      "stateMutability": "nonpayable",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "bytes32",
+          "name": "certificateId",
+          "type": "bytes32"
+        }
+      ],
+      "name": "verifyCertificate",
+      "outputs": [
+        {
+          "internalType": "bool",
+          "name": "valid",
+          "type": "bool"
+        },
+        {
+          "internalType": "address",
+          "name": "issuer",
+          "type": "address"
+        },
+        {
+          "internalType": "address",
+          "name": "recipient",
+          "type": "address"
+        },
+        {
+          "internalType": "string",
+          "name": "metadataUri",
+          "type": "string"
+        },
+        {
+          "internalType": "uint256",
+          "name": "issuedAt",
+          "type": "uint256"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    }
+  ]
+}
